@@ -1,0 +1,88 @@
+.house-3d-viewer {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 40%, rgba(108, 92, 231, 0.06) 0%, rgba(10, 10, 26, 0.98) 60%);
+  border-radius: var(--radius-lg);
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-3d-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-tertiary);
+  font-size: 14px;
+}
+
+.empty-3d-state span {
+  font-size: 48px;
+}
+
+/* ===== HUD ===== */
+.viewer-hud {
+  position: absolute; top: 12px; left: 12px; right: 12px;
+  display: flex; justify-content: space-between; align-items: flex-start;
+  pointer-events: none; z-index: 20;
+}
+.hud-controls { display: flex; gap: 8px; flex-wrap: wrap; }
+.hud-hint {
+  font-size: 11px; color: var(--text-tertiary);
+  background: rgba(10,10,26,0.7); backdrop-filter: blur(8px);
+  padding: 4px 10px; border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle); pointer-events: none;
+}
+.hud-actions { display: flex; gap: 4px; pointer-events: all; }
+.hud-btn {
+  width: 32px; height: 32px; border-radius: var(--radius-md);
+  background: rgba(10,10,26,0.8); backdrop-filter: blur(8px);
+  border: 1px solid var(--border-subtle); color: var(--text-secondary);
+  font-size: 16px; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all var(--transition-fast);
+}
+.hud-btn:hover {
+  background: rgba(108,92,231,0.2);
+  border-color: var(--border-accent); color: var(--text-primary);
+}
+.hud-btn-active {
+  background: rgba(108,92,231,0.35) !important;
+  border-color: var(--accent-primary) !important;
+  color: #fff !important;
+}
+
+/* Applied bar */
+.viewer-applied-bar {
+  position: absolute; bottom: 12px; left: 12px;
+  display: flex; gap: 8px; z-index: 20;
+}
+.applied-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; color: var(--text-secondary);
+  background: rgba(10,10,26,0.8); backdrop-filter: blur(8px);
+  padding: 5px 12px; border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle); font-weight: 500;
+}
+.applied-dot {
+  width: 10px; height: 10px; border-radius: var(--radius-full);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ===== Canvas overrides ===== */
+.house-3d-viewer canvas {
+  width: 100% !important;
+  height: 100% !important;
+  outline: none;
+  cursor: grab;
+}
+.house-3d-viewer canvas:active {
+  cursor: grabbing;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hud-controls { display: none; }
+  .viewer-applied-bar { flex-wrap: wrap; }
+}

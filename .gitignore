@@ -1,0 +1,40 @@
+ # Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env/
+
+# Node Modules
+node_modules/
+
+# Build Files
+dist/
+build/
+
+# VSCode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Dataset
+datasets/
+data/
+*.csv
+*.zip
+*.7z
+*.pt
+*.pth
+*.h5
+*.ckpt
+
+# OS
+.DS_Store
+Thumbs.db

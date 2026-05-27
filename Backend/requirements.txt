@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+torch
+numpy
+opencv-python
+pydantic
+matplotlib
+openai
+python-dotenv
+shapely
+sqlalchemy[asyncio]
+asyncpg
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart

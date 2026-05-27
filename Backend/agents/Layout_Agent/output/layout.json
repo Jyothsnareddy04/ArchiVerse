@@ -1,0 +1,116 @@
+{
+  "plot": {
+    "width": 40.0,
+    "height": 60.0,
+    "facing": "east"
+  },
+  "rooms": [
+    {
+      "name": "parking",
+      "type": "parking",
+      "zone": "utility",
+      "x": 23.44,
+      "y": 3.28,
+      "width": 10.0,
+      "height": 18.0,
+      "area": 180.0
+    },
+    {
+      "name": "staircase",
+      "type": "staircase",
+      "zone": "circulation",
+      "x": 16.94,
+      "y": 3.28,
+      "width": 6.5,
+      "height": 11.0,
+      "area": 71.5
+    },
+    {
+      "name": "backyard",
+      "type": "backyard",
+      "zone": "utility",
+      "x": 3.28,
+      "y": 3.28,
+      "width": 4.52,
+      "height": 20.0,
+      "area": 90.48
+    },
+    {
+      "name": "living",
+      "type": "living",
+      "zone": "social",
+      "x": 3.28,
+      "y": 40.69,
+      "width": 16.59,
+      "height": 16.03,
+      "area": 265.94
+    },
+    {
+      "name": "kitchen",
+      "type": "kitchen",
+      "zone": "service",
+      "x": 23.49,
+      "y": 24.66,
+      "width": 9.95,
+      "height": 16.03,
+      "area": 159.56
+    },
+    {
+      "name": "dining",
+      "type": "dining",
+      "zone": "social",
+      "x": 14.44,
+      "y": 24.66,
+      "width": 9.05,
+      "height": 16.03,
+      "area": 145.06
+    },
+    {
+      "name": "master_bedroom",
+      "type": "master_bedroom",
+      "zone": "private",
+      "x": 3.28,
+      "y": 3.28,
+      "width": 12.5,
+      "height": 21.38,
+      "area": 176.72
+    },
+    {
+      "name": "bathroom_1",
+      "type": "bathroom",
+      "zone": "service",
+      "x": 3.28,
+      "y": 24.66,
+      "width": 5.0,
+      "height": 7.0,
+      "area": 35.0
+    },
+    {
+      "name": "bathroom_2",
+      "type": "bathroom",
+      "zone": "service",
+      "x": 10.44,
+      "y": 24.66,
+      "width": 4.0,
+      "height": 7.0,
+      "area": 28.0
+    },
+    {
+      "name": "corridor",
+      "type": "corridor",
+      "zone": "circulation",
+      "x": 3.28,
+      "y": 24.66,
+      "width": 11.16,
+      "height": 16.03,
+      "area": 115.9
+    }
+  ],
+  "score": 87.0,
+  "utilisation": 78.7,
+  "errors": [],
+  "warnings": [
+    "backyard: extreme aspect ratio 0.23",
+    "Vastu: dining at north-east, preferred west"
+  ]
+}

@@ -1,0 +1,316 @@
+.final-overview-container {
+  padding: var(--space-2xl);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* 3D Preview Section */
+.overview-3d-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--space-xl);
+}
+
+.overview-3d-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg) var(--space-xl);
+  background: var(--gradient-card);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.overview-3d-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.overview-3d-header p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.overview-3d-viewer {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.overview-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.overview-card:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+}
+
+.overview-card-wide {
+  grid-column: 1 / -1;
+}
+
+.overview-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-glass);
+}
+
+.overview-card-icon {
+  font-size: 20px;
+}
+
+.overview-card-header h3 {
+  font-size: 15px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.overview-card-body {
+  padding: var(--space-lg);
+}
+
+.overview-card-body h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.overview-card-body > p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+/* Specs */
+.overview-specs {
+  display: flex;
+  gap: var(--space-xl);
+  padding: var(--space-md);
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+}
+
+.overview-spec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spec-value {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--accent-primary-light);
+}
+
+.spec-label {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Blueprint mini */
+.overview-blueprint-mini {
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.overview-mini-svg {
+  width: 100%;
+  max-height: 120px;
+}
+
+.overview-room-count {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+/* Exterior palette */
+.overview-palette {
+  display: flex;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-top: var(--space-md);
+}
+
+.overview-color-block {
+  flex: 1;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+
+.overview-hex {
+  font-size: 8px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Interior grid */
+.overview-interior-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.overview-room-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: rgba(108, 92, 231, 0.03);
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--border-subtle);
+}
+
+.overview-room-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.overview-room-title::before {
+  content: '🏷️';
+  font-size: 14px;
+}
+
+.overview-room-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-md);
+}
+
+.overview-interior-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-md);
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.interior-item-label {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.interior-item-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: capitalize;
+}
+
+/* Blueprint tags */
+.overview-blueprint-tags {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.blueprint-tag {
+  padding: 6px 14px;
+  background: rgba(108, 92, 231, 0.08);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-primary-light);
+}
+
+/* Cost count badge */
+.overview-count-badge {
+  margin-top: var(--space-md);
+  padding: 6px 12px;
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+/* Cost preview grid */
+.overview-card-highlight {
+  border-color: var(--border-accent);
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.04) 0%, rgba(253, 203, 110, 0.03) 100%);
+}
+
+.cost-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.cost-preview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--space-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.cost-preview-label {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.cost-preview-count {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--accent-primary-light);
+}
+
+.cost-preview-total {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cost-preview-desc {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 700px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .cost-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
